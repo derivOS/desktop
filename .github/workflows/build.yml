@@ -87,7 +87,7 @@ jobs:
         ls -liah build
     - name: Download meta
       uses: mudler/luet-github-action@master
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         # tree: packages
         downloadMeta: true
@@ -96,7 +96,7 @@ jobs:
         REPOSITORY_TYPE: docker
     - name: Create repo 🔧
       uses: mudler/luet-github-action@master
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
       with:
         # tree: packages
         createRepo: true
