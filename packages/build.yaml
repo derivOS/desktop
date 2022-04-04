@@ -1,0 +1,6 @@
+image: "alpine"
+package_dir: /repo
+
+steps:
+- mkdir -p /repo/
+- echo "foo" >/repo/test
