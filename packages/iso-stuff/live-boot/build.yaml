@@ -1,0 +1,10 @@
+image: alpine
+
+steps:
+- cp -r files/* /
+
+includes:
+- /boot$|/boot/.*
+# Needed ISOIMAGE
+- /EFI$|/EFI/.*
+- /loader$|/loader/.*
