@@ -15,8 +15,8 @@ jobs:
       - name: Install deps
         run: |
           curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
-          sudo luet install repository/mocaccino-extra
-          sudo luet install utils/jq
+          sudo luet install -y repository/mocaccino-extra
+          sudo luet install -y utils/jq
       - name: Set matrix for build
         id: set-matrix
         run: |
