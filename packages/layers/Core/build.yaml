@@ -1,0 +1,14 @@
+excludes: 
+- ^/etc/passwd
+- ^/etc/shadow
+- ^/etc/group
+- ^/etc/gshadow
+
+steps:
+- apt-get update
+- DEBIAN_FRONTEND=noninteractive apt-get install -y xfce4 ligthdm  linux-image-amd64
+  
+requires:
+- category: "derivOS"
+  name: "Seed"
+  version: ">=0"
