@@ -1,0 +1,8 @@
+steps:
+- apt-get update
+- DEBIAN_FRONTEND=noninteractive apt-get install -y linux-image-amd64
+
+requires:
+- category: "derivOS"
+  name: "Logiciels"
+  version: ">=0"
