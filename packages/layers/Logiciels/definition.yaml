@@ -1,0 +1,7 @@
+category: "derivOS"
+name: "Logiciels"
+version: "0.20220929"
+requires:
+- name: "Core"
+  category: "derivOS"
+  version: ">=0"

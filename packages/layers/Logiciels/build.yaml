@@ -1,0 +1,8 @@
+steps:
+- apt-get update
+- DEBIAN_FRONTEND=noninteractive apt-get install -y libreoffice
+  
+requires:
+- category: "derivOS"
+  name: "Core"
+  version: ">=0"
