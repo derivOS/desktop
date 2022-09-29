@@ -1,2 +1,7 @@
+excludes: 
+- ^/etc/passwd
+- ^/etc/shadow
+- ^/etc/group
+- ^/etc/gshadow
 image: "debian:latest"
 unpack: true
