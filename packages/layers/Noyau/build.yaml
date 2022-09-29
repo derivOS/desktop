@@ -1,6 +1,10 @@
 steps:
 - apt-get update
-- DEBIAN_FRONTEND=noninteractive apt-get install -y linux-image-amd64
+- DEBIAN_FRONTEND=noninteractive apt-get install -y linux-image-amd64 
+- DEBIAN_FRONTEND=noninteractive apt-get install -y dracut dracut-live ||true
+- dracut --kver $(ls /lib/modules) -N -a dmsquash-live -a pollcdrom -a systemd -a systemd-initrd -a systemd-networkd  -a dracut-systemd --force
+- cp /boot/initrd.img-*-amd64 /boot/initrd-dracut
+
 
 requires:
 - category: "derivOS"
