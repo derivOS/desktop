@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+   <mime-type type="application/vnd.atom.file">
+     <sub-class-of type="text/plain"/>
+     <comment>Fichier Atom</comment>
+     <glob pattern="*.c"/>
+     <glob pattern="*.cpp"/>
+     <glob pattern="*.csv"/>
+     <glob pattern="*.h"/>
+     <glob pattern="*.hpp"/>
+     <glob pattern="*.html"/>
+     <glob pattern="*.java"/>
+     <glob pattern="*.js"/>
+     <glob pattern="*.php"/>
+     <glob pattern="*.py"/>
+     <glob pattern="*.sql"/>
+     <glob pattern="*.tsv"/>
+     <glob pattern="*.txt"/>
+     <glob pattern="*.xml"/>
+   </mime-type>
+</mime-info>

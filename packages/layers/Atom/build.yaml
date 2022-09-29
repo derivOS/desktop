@@ -1,0 +1,18 @@
+prelude:
+  - apk add wget curl
+steps:
+- wget "https://github.com/atom/atom/releases/download/v1.58.0/atom-amd64.tar.gz"
+- tar xvf atom-amd64.tar.gz
+- mkdir -p /package/usr/share/
+- cp -r customisation/applications /package/usr/share
+- cp -r customisation/icons /package/usr/share
+- cp -r customisation/mime /package/usr/share
+- mv atom-*-amd64 /package/usr/share/atom
+- mkdir -p /usr/share/atom
+- touch /usr/share/atom/atom
+- mkdir -p /package/usr/bin
+- ln -s /usr/share/atom/atom /package/usr/bin/atom
+
+
+package_dir: /package
+image: alpine
