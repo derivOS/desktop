@@ -1,0 +1,11 @@
+include:
+includes:
+- /etc/passwd$
+- /etc/group$
+- /etc/shadow$
+- /etc/gshadow$
+unpack: true
+requires:
+- category: "derivOS"
+  name: "Noyau"
+  version: ">=0"
