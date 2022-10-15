@@ -1,9 +1,10 @@
-include:
 includes:
-- /etc/passwd$
-- /etc/group$
-- /etc/shadow$
-- /etc/gshadow$
+- /etc$
+- /etc/passwd
+- /etc/group
+- /etc/shadow
+- /etc/gshadow
+
 unpack: true
 requires:
 - category: "derivOS"
