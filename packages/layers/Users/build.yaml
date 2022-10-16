@@ -9,5 +9,5 @@ steps:
 unpack: true
 requires:
 - category: "derivOS"
-  name: "Noyau"
+  name: "Logiciels"
   version: ">=0"
