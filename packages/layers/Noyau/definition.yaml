@@ -1,6 +1,6 @@
 category: "derivOS"
 name: "Noyau"
-version: "0.20221015"
+version: "0.20221016"
 requires:
 - name: "Logiciels"
   category: "derivOS"

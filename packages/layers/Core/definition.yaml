@@ -1,6 +1,6 @@
 category: "derivOS"
 name: "Core"
-version: "0.20221016"
+version: "0.20221016+1"
 requires:
 - name: "Seed"
   category: "derivOS"

@@ -1,6 +1,6 @@
 category: "derivOS"
 name: "Logiciels"
-version: "0.20221016"
+version: "0.20221016+1"
 requires:
 - name: "Core"
   category: "derivOS"
