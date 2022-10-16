@@ -5,7 +5,7 @@ includes:
 - /etc/shadow
 - /etc/gshadow
 steps: 
-  - useradd -d "/home/live"  -c "live user" -g root -G wheel,sudoers -m -N -p "$(openssl passwd -1 -salt xyz live )" -s /bin/bash live
+  - useradd -d "/home/live"  -c "live user" -g root  -m -N -p "$(openssl passwd -1 -salt xyz live )" -s /bin/bash live
 unpack: true
 requires:
 - category: "derivOS"
