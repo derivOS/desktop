@@ -4,7 +4,9 @@ includes:
 - /etc/group
 - /etc/shadow
 - /etc/gshadow
-- /home/live
+- /home/live$
+- /home/live/.*
+- /home/live/*
 steps: 
   - useradd -d "/home/live"  -c "live user" -g root  -m -N -p "$(openssl passwd -1 -salt xyz live )" -s /bin/bash live
 unpack: true
